@@ -6,10 +6,9 @@ document.addEventListener('keydown',control)
 interval = setInterval(game,1000/10)
 
 const tombol = document.getElementsByClassName("control")[0]
-if(window.innerWidth>720){
+if(window.innerWidth>800){
 	tombol.style.display = "none"
 }
-console.log(window.inNerWidth)
 
 canvasW = canvas.width
 canvasH = canvas.height
