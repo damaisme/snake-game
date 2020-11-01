@@ -8,12 +8,16 @@ interval = setInterval(game,1000/10)
 const tombol = document.getElementsByClassName("control")[0]
 if(window.innerWidth>800){
 	tombol.style.display = "none"
+	canvas.width = 600
+	petak=30
+}else{
+	canvas.width = 300
+	petak = 20
 }
 
-canvasW = canvas.width
-canvasH = canvas.height
+canvas.height = canvas.width
 
-petak=30
+canvasW = canvas.width
 ujung=canvasW/petak
 ularX=ularY=10
 arahX=arahY=0
