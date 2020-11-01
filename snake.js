@@ -128,7 +128,7 @@ function game(){
 			play=false
 			ularX=ularY=10
 			arahX=arahY=0
-			apelX=apelY=15
+			apelX=apelY=Math.floor(Math.random()*ujung)
 			jejak=[]
 			ekor = 2
 			alert(`Your score: ${count}`)
