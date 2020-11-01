@@ -5,7 +5,17 @@ const highscore = document.getElementsByClassName("highscore")[0]
 document.addEventListener('keydown',control)
 interval = setInterval(game,1000/10)
 
-petak=ujung=20
+const tombol = document.getElementsByClassName("control")[0]
+if(window.innerWidth>720){
+	tombol.style.display = "none"
+}
+console.log(window.inNerWidth)
+
+canvasW = canvas.width
+canvasH = canvas.height
+
+petak=30
+ujung=canvasW/petak
 ularX=ularY=10
 arahX=arahY=0
 apelX=apelY=15
